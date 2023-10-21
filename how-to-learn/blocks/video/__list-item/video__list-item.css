@@ -1,0 +1,11 @@
+.video__list-item {
+  margin: 0;
+  padding: 0;
+  width: 515px;
+  height: 316px;
+  display: flex;
+}
+
+.video__list-item:first-child {
+  margin-right: 20px;
+}

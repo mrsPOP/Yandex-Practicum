@@ -1,0 +1,91 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.menu_active {
+  transform: scale(1);
+}
+
+.menu__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 68vw;
+  background-color: #fff;
+}
+
+.menu__content .account-button {
+  margin-bottom: 90px;
+}
+
+.menu__close {
+  background-color: transparent;
+  background-image: url('../../images/close.svg');
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 22.44px;
+  right: 22.44px;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu__close:hover {
+  opacity: .5;
+}
+
+.menu__items {
+  margin-top: 159px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.menu__item {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  opacity: .5;
+}
+
+.menu__item_active {
+  border-bottom: 2px solid #000;
+}
+
+@media screen and (max-width: 430px) {
+  .menu__content {
+    width: 100vw;
+  }
+
+  .menu__items {
+    margin-top: 144px;
+  }
+
+  .menu__content .account-button {
+    margin-bottom: 46px;
+  }
+}

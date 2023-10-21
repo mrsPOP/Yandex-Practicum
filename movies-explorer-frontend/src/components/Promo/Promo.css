@@ -1,0 +1,144 @@
+.promo {
+  max-width: 1280px;
+  flex-shrink: 0;
+  padding: 0 70px;
+  background: #F3C1F8;
+}
+
+.promo__progect-info-wrapper {
+  display: grid;
+  grid-template-areas:
+    'title image'
+    'text image'
+    'button .'
+  ;
+  grid-template-columns: 1fr max-content;
+}
+
+.promo__project-title {
+  margin: 0;
+  margin-bottom: 36px;
+  padding-top: 75px;
+  max-width: 640px;
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  grid-area: title;
+}
+.promo__more-info {
+  padding-bottom: 146px;
+  grid-area: text;
+  margin: 0;
+  max-width: 310px;
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: .5;
+}
+
+.promo__get-more-info {
+  width: 129px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 75px;
+  padding: 0;
+  flex-shrink: 0;
+  grid-area: button;
+  border: 0;
+  background: transparent;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+
+.promo__get-more-info:hover {
+  opacity: .7;
+}
+
+.promo__image {
+  grid-area: image;
+  width: 304px;
+  height: 310px;
+  padding-left: 30px;
+  padding-top: 75px;
+}
+
+@media screen and (max-width: 880px) {
+  .promo {
+    padding: 0 30px;
+  }
+
+  .promo__progect-info-wrapper {
+    display: grid;
+    grid-template-areas:
+      'image'
+      'title'
+      'text'
+      'button'
+    ;
+    justify-items: center;
+  }
+
+  .promo__project-title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 22px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .promo__more-info {
+    text-align: center;
+    padding-bottom: 92px;
+    max-width: 260px;
+  }
+
+  .promo__image {
+    margin-bottom: 48px;
+    margin-top: 140px;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 660px) { 
+  .promo {
+    padding: 0 10px;
+  }
+
+  .promo__image {
+    width: 206px;
+    height: 210px;
+    margin-top: 70px;
+    margin-bottom: 42px;
+  }
+ 
+  .promo__project-title {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -1.2px;
+  }
+
+  .promo__more-info {
+    padding-bottom: 80px;
+  }
+
+  .promo__get-more-info {
+    margin-bottom: 30px;
+  }
+}

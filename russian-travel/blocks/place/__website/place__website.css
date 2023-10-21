@@ -1,0 +1,22 @@
+.place__website {
+  margin: 0;
+  padding: 0;
+  grid-row: 1;
+  grid-column: 2;
+  align-self: end;
+}
+
+@media screen and (max-width: 768px) {
+  .place__website {
+    grid-column: auto;
+    grid-row: auto;
+    order: -2;
+    margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__website {
+    margin: 0 16px 0;
+  }
+}

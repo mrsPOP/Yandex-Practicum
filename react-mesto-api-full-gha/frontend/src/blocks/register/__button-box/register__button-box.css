@@ -1,0 +1,13 @@
+.register__button-box {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 216px;
+}
+
+@media screen and (max-width: 410px) {
+  .register__button-box {
+    align-self: center;
+    width: 260px;
+  }
+}

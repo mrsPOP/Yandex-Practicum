@@ -1,0 +1,18 @@
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  color: #fff;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 770px) {
+  .profile__info {
+    align-items: center;
+    margin-bottom: 36px;
+    gap: 14px;
+    width: 100%;
+  }
+}

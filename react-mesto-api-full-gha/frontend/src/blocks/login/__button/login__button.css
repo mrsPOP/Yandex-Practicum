@@ -1,0 +1,11 @@
+.login__button {
+  padding: 14px 0;
+  line-height: 22px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: #000;
+  width: 100%;
+  cursor: pointer;
+}

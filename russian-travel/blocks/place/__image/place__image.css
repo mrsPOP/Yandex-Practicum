@@ -1,0 +1,20 @@
+.place__image {
+  width: 100%;
+  max-width: 460px;
+  max-height: 460px;
+  grid-row: 2;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 768px) {
+  .place__image {
+    grid-row: auto;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__image {
+    min-width: 320px;
+  }
+}

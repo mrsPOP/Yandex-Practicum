@@ -1,0 +1,11 @@
+@media screen and (max-width: 950px) {
+  .footer {
+    margin: 0 27px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer {
+    margin: 0 19px;
+  }
+}

@@ -1,0 +1,26 @@
+.notification {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #c1ffcf;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.notification_error {
+  background: #ffaeae;
+}
+
+.notification_visible {
+  display: flex;
+  padding: 10px;
+  z-index: 10;
+}
+
+.notification__text {
+  font-size: 15px;
+}

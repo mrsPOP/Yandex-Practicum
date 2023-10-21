@@ -1,0 +1,31 @@
+.register__form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.register__form input {
+  margin-top: 30px;
+  padding: 0 0 6px 1px;
+  height: 27px;
+  color: #fff;
+  background: transparent;
+  font-size: 14px;
+  line-height: 17px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.register__form input::placeholder {
+  color: #ccc;
+}
+
+@media screen and (max-width: 410px) {
+  .register__form input{
+    align-self: center;
+    width: 100%;
+    max-width: 260px;
+  }
+}

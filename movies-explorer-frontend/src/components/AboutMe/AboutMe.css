@@ -1,0 +1,186 @@
+.about-me {
+  padding: 0 70px;
+  padding-top: 110px;
+  max-width: 1280px;
+}
+
+.about-me__wrapper {
+  padding-top: 66px;
+  display: grid;
+  grid-template-areas: 
+  'name image'
+  'job image'
+  'description image'
+  'github image'
+  ;
+  grid-template-columns: minmax(min-content, 1fr) calc(270px + 49px);
+  grid-template-rows: calc(40px + 16px) 64px 88px 1fr;
+  column-gap: 230px;
+}
+
+.about-me__name {
+  margin: 0;
+  grid-area: name;
+  color: #000;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+}
+
+.about-me__job {
+  align-self: center;
+  margin: 0;
+  grid-area: job;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.about-me__description {
+  grid-area: description;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.about-me__github {
+  grid-area: github;
+  align-self: end;
+  text-decoration: none;
+  text-align: left;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.about-me__github:hover {
+  opacity: .5;
+}
+
+.about-me__photo {
+  grid-area: image;
+  width: 270px;
+  height: 327px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 49px;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-me {
+    padding: 0 50px;
+    padding-top: 90px;
+  }
+
+  .about-me__wrapper {
+    column-gap: 49px;
+    grid-template-columns: minmax(min-content, 364px) 1fr;
+    grid-template-rows: calc(40px + 16px) calc(18px + 20px) calc(108px + 87px) 17px;
+  }
+
+  .about-me__photo {
+    justify-self: end;
+    width: 255px;
+    height: 307px;
+  }
+
+  .about-me__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__job {
+    align-self: start;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__name {
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me__photo {
+    width: 255px;
+    height: 307px;
+    margin-left: 0;
+    justify-self: center;
+  }
+
+  .about-me {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .about-me {
+    padding: 70px 14px 0;
+  }
+
+  .about-me__wrapper {
+    grid-template-columns: minmax(min-content, 292px);
+    grid-template-rows: none;
+    grid-template-areas: 
+      'image'
+      'name'
+      'job'
+      'description'
+      'github'
+    ;
+    justify-items: center;
+  }
+
+  .about-me__photo {
+    width: 292px;
+    height: 352px;
+    margin-left: 0;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .about-me__description {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 0;
+    width: 100%;
+    
+  }
+
+  .about-me__job {
+    justify-self: start;
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+
+  }
+
+  .about-me__name {
+    justify-self: start;
+    font-size: 30px;
+    letter-spacing: -1.2px;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .about-me__github {
+    justify-self: start;
+    align-self: end;
+    margin-top: 27px;
+    width: 100%;
+  }
+}

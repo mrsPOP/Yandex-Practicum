@@ -1,0 +1,5 @@
+.popup__notification {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }

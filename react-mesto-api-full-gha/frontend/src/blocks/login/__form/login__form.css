@@ -1,0 +1,31 @@
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login__form input {
+  outline: none;
+  margin-top: 30px;
+  padding: 0 0 6px 1px;
+  height: 27px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: white;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.login__form input::placeholder {
+  color: #ccc;
+}
+
+@media screen and (max-width: 410px) {
+  .login__form input {
+    align-self: center;
+    width: 100%;
+    max-width: 260px;
+  }
+}

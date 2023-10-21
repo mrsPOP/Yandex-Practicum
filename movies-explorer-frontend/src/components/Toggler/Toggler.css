@@ -1,0 +1,70 @@
+.toggler {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.toggler__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggler__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F5F5F5;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.toggler__slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.toggler__input:checked + .toggler__slider:before {
+  background-color: #2BE080;
+}
+
+.toggler__input:checked + .toggler__slider {
+  background-color: #fff;
+}
+
+.toggler__input + .toggler__slider {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggler__input:checked + .toggler__slider:before {
+  transform: translateX(16px);
+}
+
+.toggler__label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000;
+}
+
+@media screen and (max-width: 330px) {
+  .toggler__label {
+    font-size: 11px;
+  }
+}

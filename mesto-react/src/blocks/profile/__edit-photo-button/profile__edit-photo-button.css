@@ -1,0 +1,29 @@
+.profile__edit-photo-button {
+  position: absolute;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  background: transparent;
+  max-width: 120px;
+  border-radius: 50%;
+  margin-right: 30px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.profile__edit-photo-button:hover {
+  background-image: url('../../../images/pen.svg');
+  background-color: rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px;
+}
+
+@media screen and (max-width: 770px) {
+  .profile__edit-photo-button {
+    margin-bottom: 22.25px;
+  }
+}

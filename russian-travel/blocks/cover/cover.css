@@ -1,0 +1,33 @@
+.cover {
+  padding: 0;
+  margin: 0 48px 92px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 92%;
+  max-height: 740px;
+  aspect-ratio: 320/200;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    margin-bottom: 92px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    margin-bottom: 88px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .cover {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+}

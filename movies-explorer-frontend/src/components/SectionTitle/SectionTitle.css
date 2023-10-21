@@ -1,0 +1,32 @@
+.section-title__text {
+  margin: 0;
+  padding: 0;
+  height: 51px;
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title__text::after {
+  content: '';
+  width: 100%;
+  border-bottom: solid 1px #000;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 365px) {
+  .section-title__text {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+}

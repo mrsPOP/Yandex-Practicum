@@ -1,0 +1,23 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 70px 0 54px;
+  border-bottom: 1px solid #AAA;
+  margin: 0 70px 10px;
+}
+
+@media screen and (max-width: 880px) {
+  .filter {
+    padding: 70px 0 51px;
+    margin: 0 30px 10px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .filter {
+    gap: 30px;
+    padding: 70px 0 63px;
+    margin: 0 14px 10px;
+  }
+}

@@ -1,0 +1,9 @@
+.cover__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 320/200;
+  object-fit: contain;
+}
+
